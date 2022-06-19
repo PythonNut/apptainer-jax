@@ -44,6 +44,7 @@ jax-cosmo = "^0.1rc9"
 tree-math = "^0.1.0"
 dm-tree = "^0.1.7"
 dm-haiku = "^0.0.6 "
+equinox = "^0.5.3"
 
 ortools = "^9.3.10497"
 
