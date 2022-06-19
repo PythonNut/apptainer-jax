@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "cuda-jax"
+version = "0.1.0"
+description = "CUDA ML Environment"
+authors = ["Jonathan Hayase <jhayase@cs.uw.edu>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+imageio = "^2.15.0"
+tqdm = "^4.59.0"
+python-dotenv = {extras = ["cli"], version = "^0.16.0"}
+Cython = "^0.29.24"
+# pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
+wandb = "^0.12.9"
+quadprog = "^0.1.11"
+
+dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
+cloudpickle = "^2.0.0"
+
+torch = "^1.10.1"
+# torch = {url = "https://download.pytorch.org/whl/cu113/torch-1.10.2%2Bcu113-cp39-cp39-linux_x86_64.whl"}
+torchvision = "*"
+# torchvision = {url = "https://download.pytorch.org/whl/cu113/torchvision-0.11.3%2Bcu113-cp39-cp39-linux_x86_64.whl"}
+
+tensorflow = "^2.9.1"
+tensorflow-datasets = "^4.6.0"
+
+numpy = "1.21.4"
+scipy = "^1.6.2"
+pandas = "^1.2.3"
+scikit-learn = "^1.1"
+seaborn = "^0.11.2"
+
+jax = "^0.3.8"
+jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.8+cuda11.cudnn82-cp39-none-manylinux2014_x86_64.whl"}
+neural-tangents = "*"
+# neural-tangents = {git = "https://github.com/google/neural-tangents", rev = "main"}
+optax = "^0.1.2"
+flax = "^0.3.5"
+jax2torch = "^0.0.7"
+jaxopt = "^0.4.2"
+diffrax = "^0.1.2"
+jax-cosmo = "^0.1rc9"
+tree-math = "^0.1.0"
+dm-tree = "^0.1.7"
+dm-haiku = "^0.0.6 "
+
+ortools = "^9.3.10497"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.0"
+jupyter = "^1.0"
+jupytext = "^1.13.8"
+python-lsp-server = "^1.4.1"
+python-lsp-black = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

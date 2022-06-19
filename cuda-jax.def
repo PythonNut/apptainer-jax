@@ -1,0 +1,21 @@
+Bootstrap: docker
+From: mambaorg/micromamba:0.24.0
+
+%files
+    cuda-jax.yml env.yml
+    cuda-jax.sh post.sh
+    pyproject.toml pyproject.toml
+
+%environment
+    export PROMPT_COMMAND='eval "$(micromamba shell hook --shell=posix)" && micromamba activate cuda-jax; unset PROMPT_COMMAND'
+    export PATH=/opt/conda/bin:/opt/conda/envs/cuda-jax/bin/:${PATH}
+
+%post
+    bash post.sh
+
+%runscript
+    if [ $# -ne 0 ]; then
+      exec $@
+    else
+      ipython
+    fi

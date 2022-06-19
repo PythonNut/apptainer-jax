@@ -1,0 +1,12 @@
+name: cuda-jax
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - poetry
+  - cuda-toolkit
+  - git
+  - gcc
+  - pytorch
