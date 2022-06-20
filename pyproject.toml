@@ -10,17 +10,19 @@ imageio = "^2.15.0"
 tqdm = "^4.59.0"
 python-dotenv = {extras = ["cli"], version = "^0.16.0"}
 Cython = "^0.29.24"
-# pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
 wandb = "^0.12.9"
 quadprog = "^0.1.11"
+
+submitit = "^1.4.2"
+# pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
 
 dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
 cloudpickle = "^2.0.0"
 
-torch = "^1.10.1"
-# torch = {url = "https://download.pytorch.org/whl/cu113/torch-1.10.2%2Bcu113-cp39-cp39-linux_x86_64.whl"}
-torchvision = "*"
-# torchvision = {url = "https://download.pytorch.org/whl/cu113/torchvision-0.11.3%2Bcu113-cp39-cp39-linux_x86_64.whl"}
+torch = "^1.11.0"
+torchvision = "^0.12.0"
+functorch = "^0.1.1"
+webdataset = "^0.2.5"
 
 tensorflow = "^2.9.1"
 tensorflow-datasets = "^4.6.0"
