@@ -1,12 +1,13 @@
 name: cuda-jax
 channels:
   - pytorch
-  - nvidia
+  - nvidia/label/cuda-11.6.2
   - conda-forge
 dependencies:
   - python=3.9
   - poetry
-  - cuda-toolkit
+  - cuda-toolkit=11.6.2
+  - cudnn
   - git
   - gcc
   - pytorch
