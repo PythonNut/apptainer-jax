@@ -15,7 +15,7 @@ From: mambaorg/micromamba:0.24.0
 
 %runscript
     if [ $# -ne 0 ]; then
-      exec $@
+      exec "$@"
     else
       ipython
     fi
