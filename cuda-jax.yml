@@ -8,6 +8,4 @@ dependencies:
   - poetry
   - cuda-toolkit=11.6.2
   - cudnn
-  - git
-  - gcc
   - pytorch

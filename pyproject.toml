@@ -14,7 +14,7 @@ wandb = "^0.12.9"
 quadprog = "^0.1.11"
 
 submitit = "^1.4.2"
-# pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
+pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
 
 dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
 cloudpickle = "^2.0.0"
