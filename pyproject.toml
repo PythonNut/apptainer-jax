@@ -35,18 +35,23 @@ seaborn = "^0.11.2"
 
 jax = "^0.3.8"
 jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.8+cuda11.cudnn82-cp39-none-manylinux2014_x86_64.whl"}
-neural-tangents = "*"
-# neural-tangents = {git = "https://github.com/google/neural-tangents", rev = "main"}
-optax = "^0.1.2"
 flax = "^0.3.5"
-jax2torch = "^0.0.7"
+dm-haiku = "^0.0.6 "
+elegy = "^0.8.6"
+equinox = "^0.5.3"
+# neural-tangents = {git = "https://github.com/google/neural-tangents", rev = "main"}
+neural-tangents = "^0.5.0"
+optax = "^0.1.2"
 jaxopt = "^0.4.2"
 diffrax = "^0.1.2"
-jax-cosmo = "^0.1rc9"
 tree-math = "^0.1.0"
 dm-tree = "^0.1.7"
-dm-haiku = "^0.0.6 "
-equinox = "^0.5.3"
+jax-metrics = "^0.1.2"
+jax-models = "^0.0.5"
+jax-loss = "^0.0.1"
+jax-cosmo = "^0.1rc9"
+augmax = "^0.2.2"
+jax2torch = "^0.0.7"
 
 ortools = "^9.3.10497"
 
