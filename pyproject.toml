@@ -11,7 +11,6 @@ tqdm = "^4.59.0"
 python-dotenv = {extras = ["cli"], version = "^0.16.0"}
 Cython = "^0.29.24"
 wandb = "^0.12.9"
-quadprog = "^0.1.11"
 dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
 cloudpickle = "^2.0.0"
 
@@ -61,7 +60,13 @@ jax2torch = "^0.0.7"
 POT = "^0.8.2"
 ott-jax = "^0.2.7"
 
+# Math Optimization and SAT
 ortools = "^9.3.10497"
+python-sat = "*"
+cvxpy = "^1.2.1"
+gurobipy = "^9.5.1"
+quadprog = "^0.1.11"
+Mosek = "^9.3.20"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.0"
