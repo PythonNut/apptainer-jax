@@ -12,27 +12,31 @@ python-dotenv = {extras = ["cli"], version = "^0.16.0"}
 Cython = "^0.29.24"
 wandb = "^0.12.9"
 quadprog = "^0.1.11"
-
-submitit = "^1.4.2"
-pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
-
 dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
 cloudpickle = "^2.0.0"
 
+# Slurm
+submitit = "^1.4.2"
+pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
+
+# PyTorch
 torch = "^1.11.0"
 torchvision = "^0.12.0"
 functorch = "^0.1.1"
 webdataset = "^0.2.5"
 
+# TensorFlow
 tensorflow = "^2.9.1"
 tensorflow-datasets = "^4.6.0"
 
+# Classic Python Libraries
 numpy = "1.21.4"
 scipy = "^1.6.2"
 pandas = "^1.2.3"
 scikit-learn = "^1.1"
 seaborn = "^0.11.2"
 
+# JAX
 jax = "^0.3.8"
 jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.8+cuda11.cudnn82-cp39-none-manylinux2014_x86_64.whl"}
 flax = "^0.3.5"
@@ -52,6 +56,10 @@ jax-loss = "^0.0.1"
 jax-cosmo = "^0.1rc9"
 augmax = "^0.2.2"
 jax2torch = "^0.0.7"
+
+# Optimal Transport
+POT = "^0.8.2"
+ott-jax = "^0.2.7"
 
 ortools = "^9.3.10497"
 
