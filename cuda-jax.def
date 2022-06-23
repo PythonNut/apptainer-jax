@@ -9,7 +9,7 @@ From: mambaorg/micromamba:0.24.0
 %environment
     export PROMPT_COMMAND='eval "$(micromamba shell hook --shell=posix)" && micromamba activate cuda-jax; unset PROMPT_COMMAND'
     export PATH=/opt/conda/bin:/opt/conda/envs/cuda-jax/bin/:${PATH}
-    export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/slurm-wlm/:$LD_LIBRARY_PATH
+    export LD_LIBRARY_PATH=/opt/conda/envs/cuda-jax/lib:/usr/lib/x86_64-linux-gnu/slurm-wlm:$LD_LIBRARY_PATH
 
 %post
     bash post.sh
