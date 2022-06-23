@@ -4,6 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list
 apt update
 apt install -y nvidia-smi slurm-wlm libslurm-dev libslurm-perl libslurmdb-perl slurm-wlm-basic-plugins-dev git gcc gcc-multilib strace gdb
+apt clean
 export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/slurm-wlm/:$LIBRARY_PATH
 
 mkdir -p /run/slurm /etc/slurm
