@@ -4,7 +4,7 @@ channels:
   - nvidia/label/cuda-11.6.2
   - conda-forge
 dependencies:
-  - python=3.9
+  - python=3.10
   - poetry
   - cuda-toolkit=11.6.2
   - cudnn

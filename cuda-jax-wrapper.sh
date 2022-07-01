@@ -17,7 +17,6 @@ typeset -a mounts=(
 
 mount_flags=()
 for m in ${mounts[@]}; do
-    echo $m
     if [[ -d "$m" ]]; then
         mount_flags+=(-B)
         mount_flags+=("$m")

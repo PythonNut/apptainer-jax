@@ -13,15 +13,16 @@ Cython = "^0.29.24"
 wandb = "^0.12.9"
 dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
 cloudpickle = "^2.0.0"
+albumentations = "^1.2.0"
 
 # Slurm
 submitit = "^1.4.2"
 pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
 
 # PyTorch
-torch = "^1.11.0"
+torch = "^1.12.0"
 torchvision = "^0.12.0"
-functorch = "^0.1.1"
+# functorch = "^0.1.1"
 webdataset = "^0.2.5"
 
 # TensorFlow
@@ -37,9 +38,9 @@ seaborn = "^0.11.2"
 
 # JAX
 jax = "^0.3.8"
-jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.8+cuda11.cudnn82-cp39-none-manylinux2014_x86_64.whl"}
+jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.8+cuda11.cudnn82-cp310-none-manylinux2014_x86_64.whl"}
 flax = "^0.5.2"
-dm-haiku = "^0.0.6 "
+dm-haiku = "^0.0.6"
 # elegy = "^0.8.6"
 equinox = "^0.5.3"
 # neural-tangents = {git = "https://github.com/google/neural-tangents", rev = "main"}
