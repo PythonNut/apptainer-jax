@@ -9,3 +9,4 @@ dependencies:
   - cuda-toolkit=11.6.2
   - cudnn
   - pytorch
+  - torchvision
