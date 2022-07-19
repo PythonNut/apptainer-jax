@@ -30,6 +30,7 @@ wandb = "^0.12.21"
 albumentations = "^1.2.0"
 cleverhans = "^4.0.0"
 onnx = "^1.12.0"
+shapecheck = "^0.0.2"
 
 # Slurm
 submitit = "^1.4.2"
@@ -41,10 +42,15 @@ torchvision = "^0.13.0"
 functorch = "^0.2.0"
 webdataset = "^0.2.5"
 onnx2pytorch = "^0.4.1"
+vit-pytorch = "^0.35.8"
+torchdynamo = "^1.12.0"
+pytorch-accelerated = "^0.1.35"
 
 # TensorFlow
 tensorflow = "^2.9.1"
 tensorflow-datasets = "^4.6.0"
+tensorboard = "^2.9.1"
+tensorboardX = "^2.5.1"
 
 # JAX
 jax = "^0.3.8"
