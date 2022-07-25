@@ -54,7 +54,7 @@ tensorboardX = "^2.5.1"
 
 # JAX
 jax = "^0.3.8"
-jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.8+cuda11.cudnn82-cp310-none-manylinux2014_x86_64.whl"}
+jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.15+cuda11.cudnn82-cp310-none-manylinux2014_x86_64.whl"}
 flax = "^0.5.2"
 dm-haiku = "^0.0.6"
 # elegy = "^0.8.6"
