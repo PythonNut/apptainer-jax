@@ -24,6 +24,9 @@ scipy = "^1.6.2"
 pandas = "^1.2.3"
 scikit-learn = "^1.1"
 seaborn = "^0.11.2"
+statsmodels = "^0.13.2"
+sympy = "^1.10.1"
+ftfy = "^6.1.1"
 
 # Framework-agnostic ML
 wandb = "^0.12.21"
@@ -31,6 +34,7 @@ albumentations = "^1.2.0"
 cleverhans = "^4.0.0"
 onnx = "^1.12.0"
 shapecheck = "^0.0.2"
+einops = "^0.4.1"
 
 # Slurm
 submitit = "^1.4.2"
@@ -45,6 +49,11 @@ onnx2pytorch = "^0.4.1"
 vit-pytorch = "^0.35.8"
 torchdynamo = "^1.12.0"
 pytorch-accelerated = "^0.1.35"
+surgeon-pytorch = "^0.0.4"
+torch-fidelity = "^0.3.0"
+pytorch-lightning = "^1.7.1"
+torchmetrics = "^0.9.3"
+kornia = "^0.6.6"
 
 # TensorFlow
 tensorflow = "^2.9.1"
@@ -73,6 +82,10 @@ jax-cosmo = "^0.1rc9"
 augmax = "^0.2.2"
 jax2torch = "^0.0.7"
 
+# Hugging Face
+diffusers = {git="https://github.com/huggingface/diffusers.git", rev="main"}
+transformers = "^4.21.1"
+
 # Optimal Transport
 POT = "^0.8.2"
 ott-jax = "^0.2.7"
@@ -85,6 +98,8 @@ cvxopt = "^1.3.0"
 gurobipy = "^9.5.1"
 quadprog = "^0.1.11"
 Mosek = "^9.3.20"
+z3-solver = "^4.9.1.0"
+py-aiger = "^6.1.23"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.0"
