@@ -69,7 +69,7 @@ dm-haiku = "^0.0.6"
 # elegy = "^0.8.6"
 equinox = "^0.5.3"
 # neural-tangents = {git = "https://github.com/google/neural-tangents", rev = "main"}
-neural-tangents = "^0.5.0"
+neural-tangents = "^0.6.0"
 optax = "^0.1.2"
 jaxopt = "^0.4.2"
 diffrax = "^0.1.2"
@@ -83,7 +83,7 @@ augmax = "^0.2.2"
 jax2torch = "^0.0.7"
 
 # Hugging Face
-diffusers = {git="https://github.com/huggingface/diffusers.git", rev="main"}
+diffusers = "^0.2.4"
 transformers = "^4.21.1"
 
 # Optimal Transport
