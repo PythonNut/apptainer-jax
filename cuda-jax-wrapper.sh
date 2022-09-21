@@ -9,6 +9,7 @@ scriptdir="$(dirname -- $(readlink -f $BASH_SOURCE))";
 
 typeset -a mounts=(
     /gscratch
+    /data
     /mmfs1
     /sw
     /run/munge
