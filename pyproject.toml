@@ -58,7 +58,7 @@ ffcv = "^0.0.3"
 clip = {git="https://github.com/openai/CLIP.git", rev="main"}
 
 # TensorFlow
-tensorflow = "^2.9.1"
+tensorflow = "2.9.1"
 tensorflow-datasets = "^4.6.0"
 tensorboard = "^2.9.1"
 tensorboardX = "^2.5.1"
