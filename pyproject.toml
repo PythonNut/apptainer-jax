@@ -15,7 +15,7 @@ tabulate = "^0.8.10"
 joblib = "^1.1.0"
 
 # Classic Python Libraries
-numpy = "1.21.4"
+numpy = "^1.21.4"
 scipy = "^1.6.2"
 pandas = "^1.2.3"
 scikit-learn = "^1.1"
@@ -26,13 +26,16 @@ ftfy = "^6.1.1"
 nltk = "^3.7"
 numba = "^0.56.0"
 
-# Framework-agnostic ML
+# Framework-agnostic ML and interchange
 wandb = "^0.12.21"
 albumentations = "^1.2.0"
 cleverhans = "^4.0.0"
 onnx = "^1.12.0"
 shapecheck = "^0.0.2"
 einops = "^0.4.1"
+onnx2pytorch = "^0.4.1"
+jax2torch = "^0.0.7"
+ivy-core = {git="https://github.com/unifyai/ivy.git", rev="master"}
 
 # Slurm
 submitit = "^1.4.2"
@@ -43,7 +46,6 @@ torch = "^1.12.0"
 torchvision = "^0.13.0"
 functorch = "^0.2.0"
 webdataset = "^0.2.5"
-onnx2pytorch = "^0.4.1"
 vit-pytorch = "^0.35.8"
 torchdynamo = "^1.12.0"
 pytorch-accelerated = "^0.1.35"
@@ -63,7 +65,7 @@ tensorboardX = "^2.5.1"
 
 # JAX
 jax = "^0.3.8"
-jaxlib = {url ="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.15+cuda11.cudnn82-cp310-none-manylinux2014_x86_64.whl"}
+jaxlib = {url="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.15+cuda11.cudnn82-cp310-none-manylinux2014_x86_64.whl"}
 flax = "^0.5.2"
 dm-haiku = "^0.0.6"
 # elegy = "^0.8.6"
@@ -76,11 +78,10 @@ diffrax = "^0.1.2"
 tree-math = "^0.1.0"
 dm-tree = "^0.1.7"
 jax-metrics = "^0.1.2"
-jax-models = "^0.0.5"
+jax-models = {git="https://github.com/DarshanDeshpande/jax-models.git", rev="main"}
 jax-loss = "^0.0.1"
 jax-cosmo = "^0.1rc9"
 augmax = "^0.2.2"
-jax2torch = "^0.0.7"
 
 # Hugging Face
 diffusers = "^0.2.4"
