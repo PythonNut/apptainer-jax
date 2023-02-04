@@ -4,7 +4,8 @@ export DEBIAN_FRONTEND=noninteractive
 sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list
 apt-get update
 apt-get install -y nvidia-smi slurm-wlm libslurm-dev libslurm-perl libslurmdb-perl slurm-wlm-basic-plugins-dev \
-    git gcc gcc-multilib strace gdb libopencv-dev libjpeg62-turbo-dev libturbojpeg0-dev
+        git gcc gcc-multilib strace gdb libopencv-dev libjpeg62-turbo-dev libturbojpeg0-dev \
+        texlive-latex-extra texlive-fonts-recommended dvipng cm-super
 apt-get clean
 export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/slurm-wlm/:$LIBRARY_PATH
 
