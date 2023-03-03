@@ -24,4 +24,20 @@ for m in ${mounts[@]}; do
     fi
 done
 
-apptainer run ${mount_flags[@]} --nv $scriptdir/cuda-jax.sif "$@"
+sifname=cuda-jax.sif
+tmpdir=/tmp
+
+# if [[ $(state -c "%d" $scriptdir) != ]]
+if [[ ! -f $tmpdir/$sifname || $tmpdir/$sifname -ot $scriptdir/$sifname ]]; then
+    if [[ -z $SLURM_NNODES || $SLURM_NNODES == 1 ]]; then
+        echo -n "copying SIF to local node using cp... " 1>&2
+        cp $scriptdir/$sifname $tmpdir/$sifname
+    else
+        echo -n "copying SIF to local node using sbcast... " 1>&2
+        sbcast $scriptdir/$sifname $tmpdir/$sifname
+    fi
+    echo done 1>&2
+fi
+
+
+apptainer -q run ${mount_flags[@]} --nv $tmpdir/cuda-jax.sif "$@"
