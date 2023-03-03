@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: mambaorg/micromamba:0.24.0
+From: mambaorg/micromamba:1.3.1-kinetic
 
 %files
     cuda-jax.yml env.yml
