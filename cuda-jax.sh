@@ -2,6 +2,7 @@ set -o errexit
 
 export DEBIAN_FRONTEND=noninteractive
 export SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
+export POETRY_VIRTUALENVS_CREATE=false
 sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list
 apt-get update
 apt-get install -y nvidia-utils-525 slurm-wlm libslurm-dev libslurm-perl libslurmdb-perl slurm-wlm-basic-plugins-dev \
@@ -15,9 +16,9 @@ ln -s /var/spool/slurmd/conf-cache/ /run/slurm/conf
 ln -s /var/spool/slurmd/conf-cache/ /etc/slurm
 
 eval "$(micromamba shell hook --shell=bash)"
-micromamba create -n cuda-jax
-micromamba install -y -n cuda-jax -f env.yml
+# micromamba create -n cuda-jax
+micromamba install -y -f env.yml
 micromamba clean --all --yes
-micromamba activate cuda-jax
+micromamba activate
 
 poetry install -v

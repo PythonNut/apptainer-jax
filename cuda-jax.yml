@@ -1,4 +1,4 @@
-name: cuda-jax
+name: base
 channels:
   - pytorch
   - nvidia/label/cuda-11.7.0
