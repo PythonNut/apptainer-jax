@@ -21,4 +21,16 @@ micromamba install -y -f env.yml
 micromamba clean --all --yes
 micromamba activate
 
+cat <<EOF > $CONDA_PREFIX/etc/conda/activate.d/ld-library-path.sh
+export OLD_LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${CONDA_PREFIX}/lib
+EOF
+
+cat <<EOF > $CONDA_PREFIX/etc/conda/deactivate.d/ld-library-path.sh
+export LD_LIBRARY_PATH=${OLD_LD_LIBRARY_PATH}
+unset OLD_LD_LIBRARY_PATH
+EOF
+
+micromamba deactivate && micromamba activate
+
 poetry install -v
