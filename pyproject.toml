@@ -14,11 +14,14 @@ Cython = "^0.29.24"
 tabulate = "^0.8.10"
 joblib = "^1.1.0"
 pytest = "^7.2.0"
+sortedcontainers = "^2.4.0"
+parallel-sort = "^0.1.0"
+cloudpathlib = "^0.13.0"
 
 # Classic Python Libraries
-numpy = "^1.21.4"
-scipy = "^1.6.2"
-pandas = "^1.2.3"
+numpy = "^1.23.5"
+scipy = "^1.9.3"
+pandas = "^1.5.2"
 scikit-learn = "^1.1"
 seaborn = "^0.11.2"
 statsmodels = "^0.13.2"
@@ -26,6 +29,7 @@ sympy = "^1.10.1"
 ftfy = "^6.1.1"
 nltk = "^3.7"
 numba = "^0.56.0"
+opencv-python = "4.7.0"
 
 # Framework-agnostic ML and interchange
 wandb = "^0.12.21"
@@ -36,58 +40,69 @@ shapecheck = "^0.0.2"
 einops = "^0.4.1"
 onnx2pytorch = "^0.4.1"
 jax2torch = "^0.0.7"
-ivy-core = {git="https://github.com/unifyai/ivy.git", rev="master"}
+nvidia-tensorrt = "^99.0.0"
+# triton = { version = "*", allow-prereleases = true}
 
 # Slurm
 submitit = "^1.4.2"
-pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
+# pyslurm = {git="https://github.com/PythonNut/pyslurm.git", rev="fix-build"}
 
 # PyTorch
-torch = "^1.12.0"
-torchvision = "^0.13.0"
-functorch = "^0.2.0"
+torch = "2.0.0"
+torchvision = "^0.15.1"
 webdataset = "^0.2.5"
 vit-pytorch = "^0.35.8"
-pytorch-accelerated = "^0.1.35"
 surgeon-pytorch = "^0.0.4"
-torch-fidelity = "^0.3.0"
 pytorch-lightning = "^1.7.1"
 pytorch-ignite = "^0.4.10"
 torchmetrics = "^0.9.3"
 kornia = "^0.6.6"
-ffcv = "^0.0.3"
+# ffcv = "^1.0.2"
 timm = "^0.6.11"
 clip = {git="https://github.com/openai/CLIP.git", rev="main"}
+open-clip-torch = {git="https://github.com/mlfoundations/open_clip", rev="main"}
+fvcore = "^0.1.5.post20221221"
+opacus = "^1.3.0"
+xformers = "^0.0.17"
+fairscale = "^0.4.13"
 
 # TensorFlow
-tensorflow = "2.9.1"
+tensorflow = "2.12.0"
 tensorflow-datasets = "^4.6.0"
 tensorboard = "^2.9.1"
 tensorboardX = "^2.5.1"
+tensorflow-probability = "^0.18.0"
 
 # JAX
-jax = "^0.4.2"
-jaxlib = {url="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.4.2+cuda11.cudnn82-cp310-cp310-manylinux2014_x86_64.whl"}
-flax = "^0.5.2"
-dm-haiku = "^0.0.6"
+jax = "^0.4.7"
+jaxlib = {url="https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.4.7+cuda11.cudnn82-cp310-cp310-manylinux2014_x86_64.whl"}
+flax = "^0.6.4"
+dm-haiku = "^0.0.9"
 # elegy = "^0.8.6"
-equinox = "^0.5.3"
+equinox = "^0.10.1"
 # neural-tangents = {git = "https://github.com/google/neural-tangents", rev = "main"}
 neural-tangents = "^0.6.0"
 optax = "^0.1.2"
 jaxopt = "^0.4.2"
-diffrax = "^0.1.2"
+diffrax = "^0.3.1"
 tree-math = "^0.1.0"
 dm-tree = "^0.1.7"
 jax-metrics = "^0.1.2"
 jax-models = {git="https://github.com/DarshanDeshpande/jax-models.git", rev="main"}
+jax-resnet = {git="https://github.com/n2cholas/jax-resnet.git", rev="main"}
 jax-loss = "^0.0.1"
 jax-cosmo = "^0.1rc9"
 augmax = "^0.2.2"
+# oryx = "^0.2.4"
+optax-shampoo = "^0.0.5"
+jaxtyping = "^0.2.11"
 
 # Hugging Face
-diffusers = "^0.2.4"
-transformers = "^4.21.1"
+diffusers = "^0.13.1"
+transformers = "^4.26.1"
+datasets = "^2.10.0"
+accelerate = "^0.16.0"
+huggingface-hub = "^0.12.1"
 
 # Optimal Transport
 POT = "^0.8.2"
@@ -110,6 +125,10 @@ imageio = "^2.15.0"
 dill = {git="https://github.com/uqfoundation/dill.git", rev="master"}
 cloudpickle = "^2.0.0"
 tables = "^3.7.0"
+fastparquet = "^2022.11.0"
+pyarrow = "^10.0.1"
+pysimdjson = "^5.0.2"
+omegaconf = "^2.3.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.0"
